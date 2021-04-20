@@ -10,5 +10,5 @@ public class Video extends Oeuvre {
         duree = dur;
     }
 
-    public void afficher() {System.out.println("Reference : " + reference + ", Auteur : " + auteur + ", Titre : " + titre + ", Annee : " + annee + ", Durée : " + duree + ", Format : " + format);}
+    public void afficher() {System.out.println("Reference : " + reference + ", Auteur : " + auteur + ", Titre : " + titre + ", Annee : " + annee + ", Duree : " + duree + ", Format : " + format);}
 }

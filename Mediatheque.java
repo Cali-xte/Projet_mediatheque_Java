@@ -15,6 +15,7 @@ public class Mediatheque {
         System.out.println("3- Une video");
         System.out.println("4- Une musique");
         String type = nouveau.nextLine();
+        System.out.println("");
         // Infos communes à tous les types d'oeuvres
         System.out.println("Entrez les informations demandées");
         System.out.println("Reference :");
@@ -25,6 +26,7 @@ public class Mediatheque {
         String titrein = nouveau.nextLine();
         System.out.println("Annee :");
         String anneein = nouveau.nextLine();
+        
 
         if (type.equals("1")) {
             Oeuvre nouvoeuvre = new Oeuvre(referencein, auteurin, titrein, anneein);
@@ -63,14 +65,16 @@ public class Mediatheque {
         else {
             System.out.println("Erreur, reessayez");
         }
+        System.out.println("");
     }
 
     public void listOeuvre() {
-        System.out.println("----------Liste des Oeuvres----------");
+        System.out.println("--------- Liste des Oeuvres ---------");
         for(int i = 0; i < mediatheque.size(); i++) {
             Oeuvre oeu = mediatheque.get(i);
             oeu.afficher();
         }
+        System.out.println("");
     }
 
     public void rechOeuvre() {
@@ -83,10 +87,13 @@ public class Mediatheque {
         System.out.println("3- Titre");
         System.out.println("4- Annee");
         String rep = in.nextLine();
+        System.out.println("");
         System.out.println("Entrez la sequence recherchee (sensible a la casse) :");
         String rech = in.nextLine();
+        System.out.println("");
         // FIN MENU
 
+        System.out.println("------------- Resultats -------------");
         if(rep.equals("1")) { // Recherche par Référence
             for(int i = 0; i < mediatheque.size(); i++) {
                 Oeuvre oeu = mediatheque.get(i);
@@ -126,6 +133,13 @@ public class Mediatheque {
                 }
             }
         }
+
+        else {
+            System.out.println("Desole, cette option de recherche n'existe pas. Reessayez");
+        }
+
+        System.out.println("-------------------------------------");
+        System.out.println("");
     }
 
     public int compteAnnee(String annee) {

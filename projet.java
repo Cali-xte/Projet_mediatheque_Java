@@ -8,17 +8,19 @@ public class projet {
         while (on == true) { //! Boucle de menu (prévoir sortie)
             // Menu principal, choix de l'action
             Scanner menu = new Scanner(System.in);
-            System.out.println("-------------------------------");
-            System.out.println("--------Menu Principal---------");
-            System.out.println("-----Choisissez une option-----");
-            System.out.println("-----en entrant le chiffre-----");
-            System.out.println("---------correspondant---------");
-            System.out.println("-------------------------------");
+            System.out.println("-------------------------------------");
+            System.out.println("---------- Menu Principal -----------");
+            System.out.println("------- Choisissez une option -------");
+            System.out.println("------- en entrant le chiffre -------");
+            System.out.println("----------- correspondant -----------");
+            System.out.println("-------------------------------------");
+            System.out.println("");
             System.out.println("1- Ajouter une oeuvre");
             System.out.println("2- Lister toutes les oeuvres");
             System.out.println("3- Rechercher une oeuvre");
             System.out.println("4- Compter les oeuvres en fonction de leur année de sortie");
             String choixMenu = menu.nextLine();
+            System.out.println("");
 
             if (choixMenu.equals("1")) {
                 media.ajOeuvre();
