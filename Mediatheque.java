@@ -17,7 +17,7 @@ public class Mediatheque {
         String type = nouveau.nextLine();
         System.out.println("");
         // Infos communes à tous les types d'oeuvres
-        System.out.println("Entrez les informations demandées");
+        System.out.println("Entrez les informations demandees");
         System.out.println("Reference :");
         String referencein = nouveau.nextLine();
         System.out.println("Auteur :");
